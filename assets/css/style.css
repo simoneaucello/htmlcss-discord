@@ -159,7 +159,7 @@ nav ul li a:hover{
 .box-vocal{
   justify-content: flex-start;
   align-items: center;
-  background-color: #d2d2d2; 
+  background-color: #f6f6f6; 
   padding-top: 300px; 
   padding-bottom: 400px;
   
@@ -208,7 +208,7 @@ nav ul li a:hover{
 
 .box-video{
   justify-content: center;
-  background-color: #d2d2d2;
+  background-color: #f6f6f6;
   padding-top: 400px;
   padding-bottom: 80px;
 
