@@ -7,7 +7,6 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-
 }
 
 
@@ -115,13 +114,9 @@ nav ul li a:hover{
   font-size: 2em;
   flex-direction: column;
   justify-content: space-evenly;
-  text-align: center;
-  
+  text-align: center;  
 }
 
-.top-button{
-
-}
 
 .scarica{
   margin-top: 30px;
@@ -134,8 +129,7 @@ nav ul li a:hover{
   background-color: #282b2e;
   margin-top: 30px;
   padding: 20px;
-  border-radius: 30px;
-  
+  border-radius: 30px;  
 }
 
 /* MAIN  */
@@ -144,11 +138,10 @@ nav ul li a:hover{
   justify-content: flex-start;
   align-items: center;
   background-color: white;
-  height: 500px;
+  padding-top: 80px;
 }
 
 .channel-img{
-  background-repeat: no-repeat;
   background-size: cover;
   width: 70%;
   
@@ -157,8 +150,8 @@ nav ul li a:hover{
 .channel-text{
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 25%;
+  width: 30%;
+  max-width: 500px;
 }
 
 
@@ -166,29 +159,41 @@ nav ul li a:hover{
 .box-vocal{
   justify-content: flex-start;
   align-items: center;
-  background-color: #d2d2d2;
- 
+  background-color: #d2d2d2; 
+  padding-top: 300px; 
+  padding-bottom: 400px;
+  
+  /* waves  */
+  --mask:
+    radial-gradient(447.21px at 50% 600.00px,#000 99%,#0000 101%) calc(50% - 400px) 0/800px 51% repeat-x,
+    radial-gradient(447.21px at 50% -400px,#0000 99%,#000 101%) 50% 200px/800px calc(51% - 200px) repeat-x,
+    radial-gradient(447.21px at 50% calc(100% - 600.00px),#000 99%,#0000 101%) 50% 100%/800px 51% repeat-x,
+    radial-gradient(447.21px at 50% calc(100% + 400.00px),#0000 99%,#000 101%) calc(50% - 400px) calc(100% - 200px)/800px calc(51% - 200px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 }
+
 
 
 .vocal-text{
   flex-direction: column;
   justify-content: center;
-  width: 25%;
- 
+  width: 80%;
+  max-width: 300px; 
 }
 
 .box-vocal .vocal-img{
   background-size: cover;
   width: 60%;
+  max-width: 700px;
 }
 
 .box-community{
   justify-content: flex-start;
   align-items: center;
   background-color: white;
-  height: 500px;
 }
+
 
 .community-img{
   background-size: cover;
@@ -204,7 +209,15 @@ nav ul li a:hover{
 .box-video{
   justify-content: center;
   background-color: #d2d2d2;
-  height: 900px;
+  padding-top: 400px;
+  padding-bottom: 80px;
+
+  /* waves  */
+  --mask:
+      radial-gradient(559.02px at 50% 750.00px,#000 99%,#0000 101%) calc(50% - 500px) 0/1000px 100%,
+      radial-gradient(559.02px at 50% -500px,#0000 99%,#000 101%) 50% 250px/1000px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
 }
 
 .video-text{
@@ -227,8 +240,6 @@ nav ul li a:hover{
 
 /* FOOTER  */
 
-footer{
-}
 
 .utilities{ 
   justify-content: space-between;
@@ -245,7 +256,7 @@ footer{
 }
 
 .ita{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .ita-text{  
@@ -257,8 +268,8 @@ i{
   color: white;
 }
 
-.fa-solid .fa-chevron-down{
-  vertical-align: middle;
+.fa-chevron-down{
+  vertical-align: top;
 }
 
 .fa-brands{
@@ -267,14 +278,13 @@ i{
 }
 
 
-.resources{   
-  
+.resources{     
   width: 230px;
   height: 480px;
 }
 
 .top-list{
-  color: #7486d0;;
+  color: #7486d0;
 
 }
 
@@ -282,8 +292,6 @@ i{
   align-items: flex-end;
   height: 150px;
   background-color: #282b2e;
-  margin-top:2px;
-  margin-bottom: 2px;;
 }
 
 .bottom-foot{
@@ -291,13 +299,10 @@ i{
   align-items: center;
   width: 100%;
   height: 90px;
+  border-top: 2px solid #7486d0;
+  margin-bottom: 80px;
 }
 
-.logo-foot{
-
-}
-
-
-.registrati{
-
+.register{
+  background-color: #7486d0;
 }
