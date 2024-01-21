@@ -53,7 +53,7 @@ header{
   align-items: center;
   margin: 0 auto;
   width: 98%;
-  max-width: 1400px;
+  max-width: 1300px;
 }  
 
 .jumbo-text p{
@@ -163,7 +163,7 @@ nav ul li a:hover{
   padding-top: 300px; 
   padding-bottom: 400px;
   
-  /* waves  */
+  /* waves with CSS generator */
   --mask:
     radial-gradient(447.21px at 50% 600.00px,#000 99%,#0000 101%) calc(50% - 400px) 0/800px 51% repeat-x,
     radial-gradient(447.21px at 50% -400px,#0000 99%,#000 101%) 50% 200px/800px calc(51% - 200px) repeat-x,
@@ -222,13 +222,15 @@ nav ul li a:hover{
 
 .video-text{
   text-align: center;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
 }
 
+
 .stars{
-  width: 300px;
+  width: 400px;
 }
 
 .bot-button{
